@@ -1,0 +1,19 @@
+{
+  "domain": "ctrlable_dali",
+  "name": "Ctrlable DALI",
+  "version": "0.1.0",
+  "config_flow": true,
+  "documentation": "https://github.com/Ctrlable/ctrlable-dali",
+  "issue_tracker": "https://github.com/Ctrlable/ctrlable-dali/issues",
+  "dependencies": [
+    "http",
+    "websocket_api",
+    "frontend",
+    "mqtt"
+  ],
+  "codeowners": [
+    "@ctrlable"
+  ],
+  "iot_class": "local_push",
+  "integration_type": "service"
+}
