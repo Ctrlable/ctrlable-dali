@@ -11,7 +11,7 @@ try:
 except Exception:_load=_src
 _spec=_u.spec_from_file_location(__name__,_load)
 _mod=_u.module_from_spec(_spec)
-_mod.__file__=str(_src)
+_mod.__file__=str(_root.parent/f"{_name}.abi3.so")
 _s.modules[__name__]=_mod
 _spec.loader.exec_module(_mod)
 globals().update({k:v for(k,v)in vars(_mod).items()if not k.startswith('__')})
