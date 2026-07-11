@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5C97FF"/>
+      <stop offset="1" stop-color="#3A78E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="58" fill="url(#bg)"/>
+  <!-- bulb glass -->
+  <circle cx="128" cy="108" r="52" fill="#ffffff"/>
+  <!-- base -->
+  <rect x="106" y="154" width="44" height="30" rx="8" fill="#ffffff"/>
+  <!-- base contact rings -->
+  <rect x="112" y="162" width="32" height="6" rx="3" fill="#3A78E8"/>
+  <rect x="112" y="174" width="32" height="6" rx="3" fill="#3A78E8"/>
+  <!-- DALI bus: addressable nodes on a line -->
+  <line x1="70" y1="212" x2="186" y2="212" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="86" cy="212" r="9" fill="#ffffff"/>
+  <circle cx="128" cy="212" r="9" fill="#ffffff"/>
+  <circle cx="170" cy="212" r="9" fill="#ffffff"/>
+</svg>
