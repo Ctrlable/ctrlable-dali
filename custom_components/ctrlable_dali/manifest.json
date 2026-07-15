@@ -1,7 +1,7 @@
 {
   "domain": "ctrlable_dali",
   "name": "Ctrlable DALI",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "config_flow": true,
   "documentation": "https://github.com/Ctrlable/ctrlable-dali",
   "issue_tracker": "https://github.com/Ctrlable/ctrlable-dali/issues",
