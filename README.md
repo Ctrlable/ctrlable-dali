@@ -77,4 +77,5 @@ link opens the panel regardless.
 - [x] Licensing (RS256 JWT gate) + panel license UI + gated action commands
 - [x] CI: Cython abi3 gate + JS obfuscation + HTML minify → public HACS repo
 - [ ] Embed the real portal public key; first tagged release
-- [ ] Per-device naming, scene-level read-back, DT8 RGB once verified on gear
+- [x] DT8 colour: CCT + RGB on fixtures, groups, broadcast and scenes
+- [ ] Per-device naming, scene-level read-back
