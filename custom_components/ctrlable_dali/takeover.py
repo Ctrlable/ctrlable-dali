@@ -24,7 +24,7 @@ async def async_record_mqtt_entities(hass):
 	for A in J.entities.values():
 		C=str(A.unique_id or'')
 		if A.platform!=_H or not C.startswith(_UID_PREFIX):continue
-		D=K.async_get(A.device_id)if A.device_id else _A;G[C]={_E:A.entity_id,'domain':A.entity_id.split('.')[0],'entity_area_id':A.area_id,_K:D.area_id if D else _A,'device_identifiers':sorted(list(A)for A in D.identifiers)if D else[],'device_name':D.name_by_user or D.name if D else _A,'name':A.name,'hidden_by':A.hidden_by,'disabled_by':A.disabled_by}
+		D=K.async_get(A.device_id)if A.device_id else _A;G[C]={_E:A.entity_id,'domain':A.entity_id.split('.')[0],'entity_area_id':A.area_id,_K:D.area_id if D else _A,'device_identifiers':sorted(list(A)for A in D.identifiers)if D else[],'device_name':D.name_by_user or D.name if D else _A,'name':A.name,'capabilities':dict(A.capabilities or{}),'hidden_by':A.hidden_by,'disabled_by':A.disabled_by}
 	F=await async_load_recorded(E);B=dict(F.get(_B)or{})
 	if takeover_active(E):
 		if B:_LOGGER.debug('Ctrlable DALI: takeover active — keeping the recorded map of %d entities untouched',len(B));return{_I:1,_B:B,_C:F.get(_C)}
